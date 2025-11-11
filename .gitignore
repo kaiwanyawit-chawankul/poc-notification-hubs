@@ -1,3 +1,4 @@
 AwesomeProject/android/app/google-services.json
 MessageHub/serviceAccountKey.json
 MessageHub/node_modules
+MessageHub/.env
