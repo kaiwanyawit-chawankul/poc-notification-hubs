@@ -11,6 +11,27 @@ https://learn.microsoft.com/en-us/azure/notification-hubs/android-sdk
 3. create backend app for send notification
 https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/notificationhubs/notification-hubs/samples-dev/sendDirectNotification.fcmV1.ts
 
+# To receive notification
+need to copy google-services.json
+    - Firebase console > Project settings > General > Your apps > Download google-services.json
+    - place it under android/app
+    - run the mobile app on emulator or device
+    - check log for device id
+    - you can use this device id to send notification from backend app
+
+## file location
+```
+.
+├── AwesomeProject
+│   ├── android
+│   │   ├── app
+│   │   │   ├── google-services.json
+├── MessageHub
+│   └── serviceAccountKey.json
+├── README.md
+```
+
+
 # To test sending
 ## FCM
 you need to copy file serviceAccountKey.json
